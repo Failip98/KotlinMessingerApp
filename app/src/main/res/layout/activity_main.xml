@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text_regrister_username"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext_regrister_login"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_regrister_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_regrister_login"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/text_regrister_username"
+        app:layout_constraintStart_toStartOf="@+id/text_regrister_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_regrister_username" />
+
+    <EditText
+        android:id="@+id/text_regrister_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_regrister_login"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/text_regrister_email"
+        app:layout_constraintStart_toStartOf="@+id/text_regrister_email"
+        app:layout_constraintTop_toBottomOf="@+id/text_regrister_email" />
+
+    <Button
+        android:id="@+id/btn_regrister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Regrister"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_btn"
+        app:layout_constraintEnd_toEndOf="@+id/text_regrister_password"
+        app:layout_constraintStart_toStartOf="@+id/text_regrister_password"
+        app:layout_constraintTop_toBottomOf="@+id/text_regrister_password" />
+
+    <TextView
+        android:id="@+id/textView_regrister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regrister"
+        android:text="Alreddy have a account?" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
